@@ -1,0 +1,165 @@
+.rightSide ul {
+	padding-left: 15px;
+}
+
+.rightSide ul li a{
+  padding-top: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.gr{
+	padding-top: 10px !important;
+}
+
+.fr{
+  float: right;
+  }
+
+.content{
+  border: 1px solid #0d77b6;
+  width: 1490px;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+nav{
+  list-style: none;
+}
+
+.tooltip {
+  display: inline-block;
+  color: white;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 17px;
+  margin: 0;
+}
+
+section{
+  height: 400px;
+  width: 100%;
+  background: #9edbff;
+}
+
+/**************************Tooltip starts*************************/
+.tooltipMenu{
+  min-height: 100px;
+  width: 5%;
+  border: 1px solid ##0d77b6;
+}
+
+.tooltipMenu ul li{
+  color: #fff;
+  padding: 10px 20px 10px 20px;
+  font-family: sans-serif;
+  font-size: 15px;
+  width: 100%;
+  background: #144881;
+}
+
+.tooltipMenu ul{
+  background: #144881;
+  position: absolute !important;
+  display: block;
+  top: 0;
+}
+
+/**************************Tooltip ends*************************/
+
+.tooltip{
+  font-weight: 400;
+  line-weight: 1.5;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  word-break: normal;	
+  word-spacing: normal;
+  white-space: normal;
+  line-break: auto;
+  font-size: .875rem;
+  word-wrap: break-word;
+  opacity: 16;
+  position: relative;
+  display: inline-block;
+  
+}
+	
+
+.tooltipMenu {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltipMenu{
+  visibility: visible;
+  cursor: pointer;
+}
+
+.bottomSide {
+  top: 100%;
+}
+
+.topSide {
+  bottom: 100%;
+}
+
+.leftSide {
+  right: 70%; 	
+  top: 15%
+}
+
+.rightSide {
+  left: 100%;
+  padding-left: 20px;
+  min-width: 20rem;
+  min-height: 30rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.tooltipMenu::after {
+    content: " ";
+    position: absolute;
+    border-width: 10px;
+    border-style: solid;
+}
+
+.bottomSide.tooltipMenu::after {
+    bottom: 100%;
+    left: 45%;
+    border-color: transparent transparent white transparent;
+}
+
+.leftSide.tooltipMenu::after {
+    left: 100%;
+    top: 5%;
+    border-color: transparent transparent transparent white;
+}
+
+.rightSide.tooltipMenu::after {
+    right: 100%;
+    top: 5%;
+    border-color: transparent white transparent transparent;
+}
+
+.topSide.tooltipMenu::after {
+    right: 45%;
+    top: 100%;
+    border-color: white transparent transparent transparent;
+}
+
+.rightSide ul li{
+	padding-left: 25px;
+}
+
+.rightSide ul li:hover i{
+  color: #fff !important;
+}

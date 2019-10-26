@@ -1,0 +1,589 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Centro de Visualización</title>
+    <meta name="description" content="Sufee Admin - HTML5 Admin Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/themify-icons.css">
+    <link rel="stylesheet" href="../assets/css/flag-icon.min.css">
+    <link rel="stylesheet" href="../assets/css/cs-skin-elastic.css">
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap-select.less"> -->
+    <link rel="stylesheet" href="../assets/scss/style.css">
+    <link href="../assets/css/lib/vector-map/jqvmap.min.css" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
+
+</head>
+<body>
+
+
+        <!-- Left Panel -->
+
+    <aside id="left-panel" class="left-panel">
+        <nav class="navbar navbar-expand-sm navbar-default">
+
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="./"><img src="http://incyt.org/web/wp-content/uploads/2018/01/logo-incyt-vertical.png" alt="Logo"></a>
+                <a class="navbar-brand hidden" href="./"><img src="../images/logo2.png" alt="Logo"></a>
+            </div>
+
+            <div id="main-menu" class="main-menu collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="../index.html"> <i class="menu-icon fa ti-home"></i>Home INCYT </a>
+                    </li>                  
+                    <h3 class="menu-title"><a href="urbano.html"><i class="menu-icon ti-stats-up"></i>  Perfil Urbano</a></h3><!-- /.menu-title -->
+                    <li>
+                        <a href="indicadores.html"> <i class="menu-icon ti-bar-chart"></i> Indicadores a diferentes escalas </a>
+                    </li> 
+                    <li>
+                        <a href="mapas.html"> <i class="menu-icon ti-map-alt"></i> Mapas </a>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </aside><!-- /#left-panel -->
+
+    <!-- Left Panel -->
+
+    <!-- Right Panel -->
+
+    <div id="right-panel" class="right-panel">
+
+        <!-- Header-->
+        <header id="header" class="header">
+
+            <div class="header-menu">
+
+                <div class="col-sm-7">
+                    <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
+                    <div class="header-left">
+                        <button class="search-trigger"><i class="fa fa-search"></i></button>
+                        <div class="form-inline">
+                            <form class="search-form">
+                                <input class="form-control mr-sm-2" type="text" placeholder="Search ..." aria-label="Search">
+                                <button class="search-close" type="submit"><i class="fa fa-close"></i></button>
+                            </form>
+                        </div>
+
+                        <div class="dropdown for-notification">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-bell"></i>
+                            <span class="count bg-danger">5</span>
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="notification">
+                            <p class="red">You have 3 Notification</p>
+                            <a class="dropdown-item media bg-flat-color-1" href="#">
+                                <i class="fa fa-check"></i>
+                                <p>Server #1 overloaded.</p>
+                            </a>
+                            <a class="dropdown-item media bg-flat-color-4" href="#">
+                                <i class="fa fa-info"></i>
+                                <p>Server #2 overloaded.</p>
+                            </a>
+                            <a class="dropdown-item media bg-flat-color-5" href="#">
+                                <i class="fa fa-warning"></i>
+                                <p>Server #3 overloaded.</p>
+                            </a>
+                          </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+
+        </header><!-- /header -->
+        <!-- Header-->
+
+        <div class="breadcrumbs">
+            
+		    
+            <!-- /# column -->
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Indicadores a diferentes escalas</h4>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-muted m-b-15">A continuación encontrará información relacionada con indicadores de urbanización a escala nacional, departamental y municipal.</p>
+
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="poblacion-tab" data-toggle="tab" href="#poblacion" role="tab" aria-controls="poblacion" aria-selected="true">Población</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="suelo-tab" data-toggle="tab" href="#suelo" role="tab" aria-controls="suelo" aria-selected="false">Suelo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="agua-tab" data-toggle="tab" href="#agua" role="tab" aria-controls="agua" aria-selected="false">Agua</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="energia-tab" data-toggle="tab" href="#energia" role="tab" aria-controls="energia" aria-selected="false">Energía</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content pl-3 p-1" id="myTabContent">
+                                <!-- Población -->
+                                <div class="tab-pane fade show active" id="poblacion" role="tabpanel" aria-labelledby="poblacion-tab">
+                                    <div class="content mt-3">
+                                        <div class="animated">
+
+                                          <div class="card">
+                                               <div class="card-body">
+                                                    <button type="button" class="btn btn-secondary mb-3" data-toggle="modal" data-target="#pm1">
+                                                       Distribución de población urbana y rural 2002-2020
+                                                    </button><br>
+                                                    <button type="button" class="btn btn-secondary mb-3" data-toggle="modal" data-target="#pm2">
+                                                       Porcentajes de población urbana y rural 2002-202
+                                                    </button><br>
+                                                    <button type="button" class="btn btn-secondary mb-3" data-toggle="modal" data-target="#pm3">
+                                                       Clasificación de departamentos y municipios según población urbana 2002-2020
+                                                    </button>                                           
+                                                </div>
+                                         </div>
+
+                                        <div class="modal fade" id="pm1" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg" id="document">
+                                                <div class="modal-content" style="width:135%" >
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="scrollmodalLabel">                                                           Distribución de población urbana y rural 2002-2020
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+
+                                                    </div>
+
+                                                    <div class="modal-body">													
+														<p>
+                                                            Información sobre distribución de población urbana y rural 2002-2020
+                                                        </p>
+                                               </div>
+                                            </div>
+									    </div>
+
+                                        <div class="modal fade" id="pm2" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg" role="document">
+                                                <div class="modal-content" style="width:110%">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="scrollmodalLabel">                                                           Porcentajes de población urbana y rural 2002-2020
+                                                        </h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>
+                                                            Información sobre Porcentajes de población urbana y rural 2002-2020
+                                                        </p>
+														<div class='tableauPlaceholder' id='viz1534979941062' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ra&#47;RankingdePoblacinUrbana&#47;RankingNacionalporDepartamento&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='RankingdePoblacinUrbana&#47;RankingNacionalporDepartamento' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ra&#47;RankingdePoblacinUrbana&#47;RankingNacionalporDepartamento&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1534979941062');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='800px';vizElement.style.height='627px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="modal fade" id="pm3" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                    <h5 class="modal-title" id="scrollmodalLabel">                                                           Clasificación de departamentos y municipios según población urbana 2002-2020
+                                                    </h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>
+                                                            Información sobre Clasificación de departamentos y municipios según población urbana 2002-2020
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                        </div><!-- .animated -->
+                                    </div><!-- .content -->
+                                </div><!-- finaliza Poblacion-->
+
+
+                                <!-- Inicia Suelo  -->
+                                <div class="tab-pane fade" id="suelo" role="tabpanel" aria-labelledby="suelo-tab">
+                                    <div class="content mt-3">
+                                        <div class="animated">
+
+                                          <div class="card">
+                                               <div class="card-body">
+                                                    <button type="button" class="btn btn-secondary mb-3" data-toggle="modal" data-target="#sm1">
+                                                        Área de suelo urbano con respecto al área total municipal 2002, 2010 y 2018
+                                                    </button><br>
+                                                    <button type="button" class="btn btn-secondary mb-3" data-toggle="modal" data-target="#sm2">
+                                                        Área de suelo urbano en alto riesgo por inundación
+                                                    </button><br>
+                                                    <button type="button" class="btn btn-secondary mb-3" data-toggle="modal" data-target="#sm3">
+                                                       Área de suelo urbano en alto riesgo por deslizamiento
+                                                    </button> <br>
+                                                    <button type="button" class="btn btn-secondary mb-3" data-toggle="modal" data-target="#sm4">
+                                                       Densidad de áreas urbanas 2002, 2010 y 2018
+                                                    </button>                                           
+                                                </div>
+                                         </div>
+
+
+
+
+                                            <div class="modal fade" id="sm1" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-lg" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                        <h5 class="modal-title" id="scrollmodalLabel">                                                           Área de suelo urbano con respecto al área total municipal 2002, 2010 y 2018
+                                                        </h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <p>
+                                                                Información sobre Área de suelo urbano con respecto al área total municipal 2002, 2010 y 2018
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="modal fade" id="sm2" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-lg" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                        <h5 class="modal-title" id="scrollmodalLabel">                                                           Área de suelo urbano en alto riesgo por inundación
+                                                        </h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <p>
+                                                                Información sobre Área de suelo urbano en alto riesgo por inundación
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="modal fade" id="sm3" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-lg" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                        <h5 class="modal-title" id="scrollmodalLabel">                                                           Área de suelo urbano en alto riesgo por deslizamiento
+                                                        </h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <p>
+                                                                Información sobre Área de suelo urbano en alto riesgo por deslizamiento
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal fade" id="sm4" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-lg" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                        <h5 class="modal-title" id="scrollmodalLabel">                                                           Densidad de áreas urbanas 2002, 2010 y 2018
+                                                        </h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <p>
+                                                                Información sobre Densidad de áreas urbanas 2002, 2010 y 2018
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div><!-- .animated -->
+                                    </div><!-- .content -->
+                                </div><!-- Finaliza suelo -->
+                                
+
+                                <!-- Inicia agua -->
+                                <div class="tab-pane fade" id="agua" role="tabpanel" aria-labelledby="agua-tab">
+                                    <div class="content mt-3">
+                                        <div class="animated">
+
+                                          <div class="card">
+                                               <div class="card-body">
+                                                    <button type="button" class="btn btn-secondary mb-3" data-toggle="modal" data-target="#am1">
+                                                        Acceso a agua en áreas urbanas
+
+                                                    </button><br>
+                                                    <button type="button" class="btn btn-secondary mb-3" data-toggle="modal" data-target="#am2">
+                                                        Consumo de agua en áreas urbanas
+
+                                                    </button><br>
+                                                    <button type="button" class="btn btn-secondary mb-3" data-toggle="modal" data-target="#am3">
+                                                       Porcentaje de viviendas con sistema de saneamiento en áreas urbanas
+
+                                                    </button>
+                                                                                           
+                                                </div>
+                                         </div>
+
+
+
+
+                                            <div class="modal fade" id="am1" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-lg" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                        <h5 class="modal-title" id="scrollmodalLabel">                                                           Acceso a agua en áreas urbanas
+
+                                                        </h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <p>
+                                                                Información sobre Acceso a agua en áreas urbanas
+
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="modal fade" id="am2" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-lg" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                        <h5 class="modal-title" id="scrollmodalLabel">                                                           Consumo de agua en áreas urbanas
+
+                                                        </h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <p>
+                                                                Información sobre Consumo de agua en áreas urbanas
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="modal fade" id="am3" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-lg" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                        <h5 class="modal-title" id="scrollmodalLabel">                                                           Porcentaje de viviendas con sistema de saneamiento en áreas urbanas
+
+                                                        </h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <p>
+                                                                Información sobre Porcentaje de viviendas con sistema de saneamiento en áreas urbanas
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- .animated -->
+                                    </div><!-- .content -->
+                                </div><!-- Finaliza suelo -->
+                                
+                                <!-- Inicia energia -->
+                                <div class="tab-pane fade" id="energia" role="tabpanel" aria-labelledby="energia-tab">
+                                    <div class="content mt-3">
+                                        <div class="animated">
+
+                                          <div class="card">
+                                               <div class="card-body">
+                                                    <button type="button" class="btn btn-secondary mb-3" data-toggle="modal" data-target="#em1">
+                                                        Acceso a energía eléctrica en áreas urbanas
+
+
+                                                    </button><br>
+                                                    <button type="button" class="btn btn-secondary mb-3" data-toggle="modal" data-target="#em2">
+                                                        Consumo de energía eléctrica en áreas urbanas
+
+
+                                                    </button><br>
+                                                    <button type="button" class="btn btn-secondary mb-3" data-toggle="modal" data-target="#em3">
+                                                       Tipo de energía utilizada para cocinar en áreas urbanas
+
+
+                                                    </button><br>
+                                                    <button type="button" class="btn btn-secondary mb-3" data-toggle="modal" data-target="#em4">
+                                                        Emisiones de CO2 por consumo de energía eléctrica en áreas urbanas
+                                                    </button>                           
+                                                </div>
+                                         </div>
+
+
+
+
+                                            <div class="modal fade" id="em1" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-lg" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                        <h5 class="modal-title" id="scrollmodalLabel">                                                           Acceso a energía eléctrica en áreas urbanas
+
+
+                                                        </h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <p>
+                                                                Información sobre Acceso a energía eléctrica en áreas urbanas
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="modal fade" id="em2" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-lg" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                        <h5 class="modal-title" id="scrollmodalLabel">                                                           Consumo de energía eléctrica en áreas urbanas
+
+                                                        </h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <p>
+                                                                Información sobre Consumo de energía eléctrica en áreas urbanas
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="modal fade" id="em3" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-lg" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                        <h5 class="modal-title" id="scrollmodalLabel">                                                           Tipo de energía utilizada para cocinar en áreas urbanas
+
+
+                                                        </h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <p>
+                                                                Información sobre Tipo de energía utilizada para cocinar en áreas urbanas
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal fade" id="em4" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-lg" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                        <h5 class="modal-title" id="scrollmodalLabel">                                                           Emisiones de CO2 por consumo de energía eléctrica en áreas urbanas
+
+
+
+                                                        </h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <p>
+                                                                Información sobre Emisiones de CO2 por consumo de energía eléctrica en áreas urbanas
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- .animated -->
+                                    </div><!-- .content -->
+                                </div><!-- Finaliza energie-->
+                            </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        </div> <!-- .content -->
+    </div><!-- /#right-panel -->
+	
+
+
+    <script src="../assets/js/vendor/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="../assets/js/plugins.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+
+    <script src="../assets/js/lib/chart-js/Chart.bundle.js"></script>
+    <script src="../assets/js/dashboard.js"></script>
+    <script src="../assets/js/widgets.js"></script>
+    <script src="../assets/js/lib/vector-map/jquery.vmap.js"></script>
+    <script src="../assets/js/lib/vector-map/jquery.vmap.min.js"></script>
+    <script src="../assets/js/lib/vector-map/jquery.vmap.sampledata.js"></script>
+    <script src="../assets/js/lib/vector-map/country/jquery.vmap.world.js"></script>
+    <script>
+        ( function ( $ ) {
+            "use strict";
+
+            jQuery( '#vmap' ).vectorMap( {
+                map: 'world_en',
+                backgroundColor: null,
+                color: '#ffffff',
+                hoverOpacity: 0.7,
+                selectedColor: '#1de9b6',
+                enableZoom: true,
+                showTooltip: true,
+                values: sample_data,
+                scaleColors: [ '#1de9b6', '#03a9f5' ],
+                normalizeFunction: 'polynomial'
+            } );
+        } )( jQuery );
+    </script>
+</body>
+</html>
