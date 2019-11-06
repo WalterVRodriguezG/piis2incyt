@@ -209,29 +209,38 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-2">
-                            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                                <a class="navbar-brand" href="#">Navbar</a>
+                        <div class="col-md-2" style="align-items:baseline">
+                            <nav class="navbar-toggler navbar-light bg-light" style="align-content:flex-start">
+                                <div class="d-flex">
 
-                                <div class="navbar" id="navbarTogglerDemo03">
-                                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                    <a class="navbar-collapse d-inline-block d-inline-flex" style="background-color:white; resize:both" href="#">Busqueda</a>
+                                    <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                </div>
+                                <br />
+                                <div class=" navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mr-auto">
                                         <li class="nav-item active">
-                                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                            <label><input type="radio" name="optradio" checked> Indicadores</label>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Link</a>
+                                            <label><input type="radio" name="optradio" checked> Casos</label>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                            <label><input type="radio" name="optradio" checked> Descargas</label>
+                                        </li>
+                                        <li>
+                                            <form class="col-form-label-sm ">
+                                                <input class="form-control col-sm-auto" type="text" placeholder="seleccione item">
+                                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                                            </form>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Limpieza</a>
                                         </li>
                                     </ul>
-                                    <form class="form-inline my-2 my-lg-0">
-                                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                                    </form>
+
                                 </div>
                             </nav>
                         </div>

@@ -602,3 +602,15 @@ header .form-inline {
   display: block; }
 
 /*# sourceMappingURL=style.css.map */
+
+/*  Clase para Navbar*/
+.nav-enlace {
+    display: inline-block;
+    background: #c8c9ce;
+    color:#272c33;
+    padding: 10px 30px;
+    text-decoration:none;
+}
+    .nav-enlace:hover {
+        background: #20a8d8;
+    }
