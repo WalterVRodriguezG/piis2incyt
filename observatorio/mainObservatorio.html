@@ -38,12 +38,15 @@
 
     <script>
         $(document).ready(function () {
-            $("#mostrarmodal").modal("show");
+            $('#mostrarmodal').modal('show');
+            closeModal();
         });
 
         function closeModal() {
             $('#progessDialog').on('shown.bs.modal', function (e) {
-                $("#progessDialog").modal("hide");
+                $('#mostrarmodal').modal('hide');
+                $('body').removeClass('modal-open');//eliminamos la clase del body para poder hacer scroll
+                $('.modal-backdrop').remove();
             });
         }
 
@@ -65,7 +68,7 @@
     <!--        MODAL - CARROSSEL   -->
 
     <!--<div class="modal fade" id="mostrarmodal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+       
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -110,7 +113,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        
     </div>-->
 
 
